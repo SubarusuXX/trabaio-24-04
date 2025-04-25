@@ -20,7 +20,7 @@
             background-color: #4CAF50;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-top-left-radius: 5px;
             font-size: 16px;
         }
         
@@ -42,11 +42,13 @@
             'green',
             'gray'
         ];
-        let indiceCor =0;
+        let trocadorcor =0;
 
         botao.addEventListener("click",function(){
-            indiceCor = ()
-        })
+            document.body.style.backgroundColor = cores [trocadorcor];
+
+            trocadorcor = (trocadorcor + 1 ) % cores.length;
+        });
     </script>
 </body>
 </html>
