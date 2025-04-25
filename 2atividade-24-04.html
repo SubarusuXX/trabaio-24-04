@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+
+    <style>
+    .textoescondido{
+        
+        text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+    <button onclick="minhafuncao()">Mostrar/Esconder Texto</button></div>
+    <p id="textoescondido" style="display: none;">Texto escondido '-' hehe</p>
+
+    <script>
+        function minhafuncao(){
+            var text = document.getElementById("textoescondido");
+            if (text.style.display ==="none"){
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+            
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão com Alerta</title>
+    <style>
+        body {
+            font-family: Arial,sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #2d5987;
+        }
+        
+        .alerta {
+            text-align: center;
+        }
+        
+        button {
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #0d01ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="alerta">
+        <button onclick="mostraralerta()">Naum Clique aqui</button>
+    </div>
+
+    <script>
+        function mostraralerta() {
+            alert("Voce ira direto para o inverno seu desrespeitador malandro.");
+        }
+    </script>
+</body>
+</html>
